@@ -4,7 +4,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="10.0.1+10"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk-10.0.1/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/jm/eclipse-workspace/jMeterLoadVariables"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/jm/git/jMeterLoadVariables/jMeterLoadVariables"/>
     <property name="java.vm.vendor" value="&quot;Oracle Corporation&quot;"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="ES"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/jm/eclipse-workspace/jMeterLoadVariables"/>
+    <property name="user.dir" value="/home/jm/git/jMeterLoadVariables/jMeterLoadVariables"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="10.0.1+10"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
@@ -25,7 +25,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/jm/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2759186074662060469.tmp"/>
+    <property name="classworlds.conf" value="/home/jm/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf3642242252804767349.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="jdk.debug" value="release"/>
@@ -51,7 +51,7 @@
     <property name="java.version" value="10.0.1"/>
     <property name="securerandom.source" value="file:/dev/./urandom"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/home/jm/eclipse-workspace/jMeterLoadVariables/EMBEDDED"/>
+    <property name="maven.home" value="/home/jm/git/jMeterLoadVariables/jMeterLoadVariables/EMBEDDED"/>
     <property name="file.separator" value="/"/>
     <property name="java.version.date" value="2018-04-17"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>

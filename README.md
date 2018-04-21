@@ -23,6 +23,11 @@ Write the json in the sampler (json to load) or type the path of the file:
 
 ![picture](jMeterLoadVariables/resources/img/sampler.png)
 
+Download:
+[JMX example file](jMeterLoadVariables/resources/jmx_files/LoadVariablesExample.jmx "JMX example") and the [JSON example file](jMeterLoadVariables/resources/jmx_files/LoadVariablesExample.jmx "JSON example")
+
+Load in jMeter 4 and run it.
+
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management

@@ -68,7 +68,6 @@ public class LoadVariablesSampler extends AbstractSampler implements TestBean
 	private String putVar(String name, Object value){
 		JMeterVariables vars = JMeterContextService.getContext().getVariables();
 		String inserted=name+"\t";
-		
 		vars.putObject(name, value);
 		if (value!= null )
 			inserted+=""+value;
@@ -133,15 +132,14 @@ public class LoadVariablesSampler extends AbstractSampler implements TestBean
             jsonSource = JSONValue.parseWithException(getJsonToLoad());
             
             
-            Object jsonLoaded = jsonSource;
-            
             JSONArray jsonToProcess = new JSONArray();
             
-            if (jsonLoaded instanceof JSONObject){
-            	jsonToProcess.add((JSONObject)jsonLoaded);
+            if (jsonSource instanceof JSONObject){
+            	jsonToProcess.add((JSONObject)jsonSource);
             } else {
-            	jsonToProcess = (JSONArray) jsonLoaded;
+            	jsonToProcess = (JSONArray) jsonSource;
             }
+            
             
             for (int i=0; i<jsonToProcess.size();i++){
             	JSONObject jsonElement= (JSONObject) jsonToProcess.get(i);

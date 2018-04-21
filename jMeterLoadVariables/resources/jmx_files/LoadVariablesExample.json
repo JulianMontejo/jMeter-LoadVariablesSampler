@@ -1,0 +1,8 @@
+{
+"STRING": "Previous string: ${STRING}-\n
+
+
+
+ñ-new random: ${__Random(1000,9999,)}",
+"JSON": {"inTRES": 13}
+}

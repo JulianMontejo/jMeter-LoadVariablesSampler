@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Plan de Pruebas" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables definidas por el Usuario" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Grupo de Hilos" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Controlador Bucle" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler guiclass="TestBeanGUI" testclass="es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler" testname="One variable" enabled="true">
+          <stringProp name="jsonToLoad">{
+&quot;TEST&quot;: &quot;First&quot;
+}</stringProp>
+          <stringProp name="pathToFile"></stringProp>
+        </es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Show debug sampler" enabled="true"/>
+        <hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="${TEST} Test. STRING: ${STRING}" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+        </hashTree>
+        <es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler guiclass="TestBeanGUI" testclass="es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler" testname="One variable each type" enabled="true">
+          <stringProp name="jsonToLoad">{
+&quot;TEST&quot;: &quot;Second&quot;,
+&quot;STRING&quot;: &quot;first line &apos;ñ&apos; \\\\n\n second 
+line&quot;,
+&quot;NUMBER&quot;: ${__Random(1000,9999,)},
+&quot;NULL&quot;: null,
+&quot;ARRAY_1&quot;: [1,2],
+&quot;ARRAY_2&quot;: [&quot;uno&quot;, &quot;dos&quot;],
+&quot;JSON&quot;: {&quot;inUno&quot;: 11,
+	&quot;inDos&quot;: [
+		{&quot;2&quot;: 2},
+		{&quot;3&quot;: [&quot;31&quot;, &quot;32&quot;]}
+		]}
+}</stringProp>
+          <stringProp name="pathToFile"></stringProp>
+        </es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="SHOW DEBUG SAMPLER" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="-1525777369">Grupo de Hilos</stringProp>
+            <stringProp name="998030200">Show debug sampler</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler guiclass="TestBeanGUI" testclass="es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler" testname="JsonArray" enabled="true">
+          <stringProp name="jsonToLoad">{
+&quot;TEST&quot;: &quot;Third&quot;,
+&quot;NUMBER&quot;: &quot;_not_number_&quot;,
+&quot;STRING&quot;: &quot;Previous random: ${NUMBER}&quot;
+}</stringProp>
+          <stringProp name="pathToFile"></stringProp>
+        </es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="SHOW DEBUG SAMPLER" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="-1525777369">Grupo de Hilos</stringProp>
+            <stringProp name="998030200">Show debug sampler</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler guiclass="TestBeanGUI" testclass="es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler" testname="Load from file" enabled="true">
+          <stringProp name="jsonToLoad">{
+&quot;TEST&quot;: &quot;BAD&quot;,
+&quot;NUMBER&quot;: ${__Random(1000,9999,)},
+&quot;STRING&quot;: &quot;This string has not been loaded&quot;
+}</stringProp>
+          <stringProp name="pathToFile">LoadVariablesExample.json</stringProp>
+        </es.jma.lib.jmeter.commons.sampler.LoadVariablesSampler>
+        <hashTree/>
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="SHOW DEBUG SAMPLER" enabled="true">
+          <collectionProp name="ModuleController.node_path">
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="-509356230">Plan de Pruebas</stringProp>
+            <stringProp name="-1525777369">Grupo de Hilos</stringProp>
+            <stringProp name="998030200">Show debug sampler</stringProp>
+          </collectionProp>
+        </ModuleController>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Ver Árbol de Resultados" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
