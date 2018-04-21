@@ -21,7 +21,7 @@ This sampler works with jMeter Ver 4+
 
 Write the json in the sampler (json to load) or type the path of the file:
 
-![picture](jMeterLoadVariables/resources/img/abc.png)
+![picture](jMeterLoadVariables/resources/img/sampler.png)
 
 ## Built With
 
