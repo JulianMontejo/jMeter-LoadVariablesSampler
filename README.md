@@ -1,14 +1,13 @@
-# Project Title
+# Load Variables Into JMeter
 
-This project generates a jar file that allows define variables in json format and load it into jMeter.
+TThis sampler allows to load in jMeter variables directly from the sampler or from a file. The variables has to be defined as a json and are loaded when the sampler is executed. This allow to reuse modules using the same variable names just changing the values right before executing they. Also you could use different datasets in different files and launch the same agenda with the chosen one.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+This sampler works with jMeter Ver 4+
 
 ```
 Give examples
@@ -16,27 +15,16 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+- Download the project
+- Compile with maven
+- Copy the result jar in lib/ext directory of jMeter
 
 
+## Use
 
-## Deployment
+Write the json in the sampler (json to load) or type the path of the file:
 
-Add additional notes about how to deploy this on a live system
+![picture](jMeterLoadVariables/resources/img/abc.png)
 
 ## Built With
 
