@@ -9,9 +9,6 @@ TThis sampler allows to load in jMeter variables directly from the sampler or fr
 
 This sampler works with jMeter Ver 4+
 
-```
-Give examples
-```
 
 ### Installing
 
