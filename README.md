@@ -14,17 +14,21 @@ This sampler works with jMeter Ver 4+
 
 - Download the project
 - Compile with maven
-- Copy the result jar in lib/ext directory of jMeter
+- Copy the result jar in the lib/ext directory of jMeter
+
+Or:
+
+- [Download it](releases/jMeterLoadVariables-0.0.2-SNAPSHOT.jar) and copy in lib/ext directory of jMeter
 
 
 ## Use
 
 Write the json in the sampler (json to load) or type the path of the file:
 
-![picture](jMeterLoadVariables/resources/img/sampler.png)
+![picture](resources/img/sampler.png)
 
 Download:
-[JMX example file](jMeterLoadVariables/resources/jmx_files/LoadVariablesExample.jmx "JMX example") and the [JSON example file](jMeterLoadVariables/resources/jmx_files/LoadVariablesExample.jmx "JSON example")
+[JMX example file](resources/jmx_files/LoadVariablesExample.jmx "JMX example") and the [JSON example file](resources/jmx_files/LoadVariablesExample.jmx "JSON example")
 
 Load in jMeter 4 and run it.
 
