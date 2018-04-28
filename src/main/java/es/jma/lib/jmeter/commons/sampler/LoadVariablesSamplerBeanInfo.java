@@ -6,7 +6,7 @@ import org.apache.jmeter.testbeans.BeanInfoSupport;
 import org.apache.jmeter.testbeans.gui.TypeEditor;
 
 /**
- * Class that define the graphic interface
+ * Class that defines the graphic interface
  * @author Julian Montejo
  *
  */
